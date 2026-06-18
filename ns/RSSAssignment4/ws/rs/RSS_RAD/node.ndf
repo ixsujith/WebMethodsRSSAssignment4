@@ -266,8 +266,8 @@
           <value name="definitionName">exceptionInfo</value>
           <Boolean name="includeInRad">true</Boolean>
         </record>
-        <record name="samplingRequest" javaclass="com.wm.util.Values">
-          <value name="name">samplingRequest</value>
+        <record name="samplingRequestOutput" javaclass="com.wm.util.Values">
+          <value name="name">samplingRequestOutput</value>
           <value name="source">BODY</value>
           <value name="type">REFERENCE</value>
           <null name="description"/>

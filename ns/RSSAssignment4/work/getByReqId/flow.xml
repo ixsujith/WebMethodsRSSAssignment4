@@ -172,19 +172,6 @@
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">samplingRequest</value>
-        <value name="field_type">recref</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-        <value name="modifiable">true</value>
-        <value name="rec_ref">RSSAssignment4.document:SamplingRequest</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">record</value>
-        <value name="node_subtype">unknown</value>
         <value name="node_comment"></value>
         <record name="node_hints" javaclass="com.wm.util.Values">
           <value name="field_usereditable">true</value>
@@ -200,6 +187,19 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">samplingRequestOutput</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">RSSAssignment4.document:SamplingRequest</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -394,31 +394,31 @@
 <MAPDELETE FIELD="/id;1;0">
 </MAPDELETE>
 
-<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/REQUEST_ID;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/requestId;1;0">
+<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/REQUEST_ID;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/requestId;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/LOCATION_SITE;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/locationSite;1;0">
+<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/LOCATION_SITE;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/locationSite;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/APPLICANT;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/applicant;1;0">
+<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/APPLICANT;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/applicant;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/USER_TYPE;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/userType;1;0">
+<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/USER_TYPE;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/userType;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/REQUEST_STATUS;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/requestStatus;1;0">
+<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/REQUEST_STATUS;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/requestStatus;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/CREATED_BY;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/createdBy;1;0">
+<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/CREATED_BY;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/createdBy;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/CREATED_DATE;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/createdDate;1;0">
+<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/CREATED_DATE;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/createdDate;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/SUBMITTED_BY;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/submittedBy;1;0">
+<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/SUBMITTED_BY;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/submittedBy;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/SUBMITTED_DATE;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/submittedDate;1;0">
+<MAPCOPY FROM="/getReqByIdOutput;2;0/results;2;1/SUBMITTED_DATE;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/submittedDate;1;0">
 </MAPCOPY>
 </MAP>
 </INVOKE>
@@ -516,7 +516,7 @@
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">samplingRequest</value>
+        <value name="field_name">samplingRequestOutput</value>
         <value name="field_type">recref</value>
         <value name="field_dim">0</value>
         <value name="nillable">true</value>
@@ -533,7 +533,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/requestId;1;0" TO="/getTestByReqIdInput;2;0/reqId;1;0">
+<MAPCOPY FROM="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/requestId;1;0" TO="/getTestByReqIdInput;2;0/reqId;1;0">
 </MAPCOPY>
 </MAP>
 
@@ -580,7 +580,7 @@
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">samplingRequest</value>
+        <value name="field_name">samplingRequestOutput</value>
         <value name="field_type">recref</value>
         <value name="field_dim">0</value>
         <value name="nillable">true</value>
@@ -757,30 +757,30 @@
 <MAPDELETE FIELD="/getTestByReqIdInput;2;0">
 </MAPDELETE>
 
-<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/TEST_ID;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/testId;1;0">
+<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/TEST_ID;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/testId;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/REQUEST_ID;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/requestId;1;0">
+<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/REQUEST_ID;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/requestId;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/SAMPLING_LOCATION;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/samplingLocation;1;0">
+<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/SAMPLING_LOCATION;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/samplingLocation;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/SAMPLING_POINT;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/samplingPoint;1;0">
+<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/SAMPLING_POINT;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/samplingPoint;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/SAMPLING_DATE;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/samplingDate;1;0">
+<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/SAMPLING_DATE;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/samplingDate;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/SAMPLING_STATUS;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/samplingStatus;1;0">
+<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/SAMPLING_STATUS;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/samplingStatus;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/DELAY_JUSTIFICATION;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/delayJustification;1;0">
+<MAPCOPY FROM="/getTestByReqIdOutput;2;0/results;2;1/DELAY_JUSTIFICATION;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;1;RSSAssignment4.document:SamplingTest/delayJustification;1;0">
 </MAPCOPY>
 </MAP>
 </INVOKE>
 
-<LOOP TIMEOUT="" IN-ARRAY="/samplingRequest/samplingTest">
+<LOOP TIMEOUT="" IN-ARRAY="/samplingRequestOutput/samplingTest">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -878,7 +878,7 @@
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">samplingRequest</value>
+        <value name="field_name">samplingRequestOutput</value>
         <value name="field_type">recref</value>
         <value name="field_dim">0</value>
         <value name="nillable">true</value>
@@ -906,7 +906,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testId;1;0" TO="/getResByTestIdInput;2;0/testId;1;0">
+<MAPCOPY FROM="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testId;1;0" TO="/getResByTestIdInput;2;0/testId;1;0">
 </MAPCOPY>
 </MAP>
 
@@ -942,7 +942,7 @@
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">samplingRequest</value>
+        <value name="field_name">samplingRequestOutput</value>
         <value name="field_type">recref</value>
         <value name="field_dim">0</value>
         <value name="nillable">true</value>
@@ -1116,25 +1116,25 @@
 <MAPDELETE FIELD="/getResByTestIdOutput;2;0">
 </MAPDELETE>
 
-<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/RESULT_ID;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/resultId;1;0">
+<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/RESULT_ID;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/resultId;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/TEST_ID;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/testId;1;0">
+<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/TEST_ID;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/testId;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/PARAMETER;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/parameter;1;0">
+<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/PARAMETER;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/parameter;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/RESULT_VALUE;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/resultValue;1;0">
+<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/RESULT_VALUE;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/resultValue;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/TEST_METHOD;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/testMethod;1;0">
+<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/TEST_METHOD;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/testMethod;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/SAMPLING_DATE;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/samplingDate;1;0">
+<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/SAMPLING_DATE;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/samplingDate;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/REMARKS;1;0" TO="/samplingRequest;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/remarks;1;0">
+<MAPCOPY FROM="/getResByTestIdOutput;2;0/results;2;1/REMARKS;1;0" TO="/samplingRequestOutput;4;0;RSSAssignment4.document:SamplingRequest/samplingTest;4;0;RSSAssignment4.document:SamplingTest/testResult;4;1;RSSAssignment4.document:TestResult/remarks;1;0">
 </MAPCOPY>
 </MAP>
 </INVOKE>
