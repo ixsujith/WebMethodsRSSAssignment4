@@ -4,12 +4,12 @@
 
   <!-- nodes -->
 
-<INVOKE TIMEOUT="" SERVICE="RSSAssignment4.wrapper:addRequestService" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="RSSAssignment4.wrapper:getAllService" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
 
-<MAP MODE="INPUT">
+<MAP MODE="OUTPUT">
 </MAP>
 </INVOKE>
 </FLOW>
