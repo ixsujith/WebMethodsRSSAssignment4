@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>== Initialize paginate variable ==</COMMENT>
+
+  <!-- nodes -->
+
+<BRANCH TIMEOUT="" SWITCH="/page">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<BRANCH NAME="/[^ ]/" TIMEOUT="" SWITCH="/pageSize">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="/[^ ]/" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -278,11 +294,14 @@
 
   <!-- nodes -->
 
+<MAPCOPY FROM="/paginate;1;0" TO="/inString2;1;0">
+</MAPCOPY>
+
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="true" GLOBALVARIABLES="false" FIELD="/inString1;1;0">
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">ORDER BY REQUEST_ID OFFSET (%page%-1)*%pageSize% ROWS FETCH NEXT %pageSize% ROWS ONLY;</value>
+  <value name="xml"> ORDER BY REQUEST_ID OFFSET (%page%-1)*%pageSize% ROWS FETCH NEXT %pageSize% ROWS ONLY</value>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">field</value>
     <value name="node_subtype">unknown</value>
@@ -297,9 +316,6 @@
 </Values>
 </DATA>
 </MAPSET>
-
-<MAPCOPY FROM="/paginate;1;0" TO="/inString2;1;0">
-</MAPCOPY>
 </MAP>
 
 <MAP MODE="INVOKEOUTPUT">
@@ -311,4 +327,7 @@
 </MAP>
 </MAPINVOKE>
 </MAP>
+</SEQUENCE>
+</BRANCH>
+</BRANCH>
 </FLOW>

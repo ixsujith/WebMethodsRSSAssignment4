@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <array name="globalVariables" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">successCode</value>
+        <value name="value">0</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">successMessage</value>
+        <value name="value">Success</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">errorCode</value>
+        <value name="value">1</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">errorMessage</value>
+        <value name="value">Failure</value>
+        <value name="isSecure">false</value>
+      </record>
+    </array>
+  </record>
+</IDataXMLCoder>

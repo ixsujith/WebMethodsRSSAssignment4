@@ -4,10 +4,13 @@
 
   <!-- nodes -->
 
-<INVOKE TIMEOUT="" SERVICE="RSSAssignment4.wrapper:getAllService" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="RSSAssignment4.work:deleteById" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
 
 <MAP MODE="OUTPUT">
 </MAP>
